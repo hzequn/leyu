@@ -1,0 +1,590 @@
+/*导航开始*/
+
+.leyu_nav {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
+.leyu_nav .navbar-brand {
+	color: #777;
+}
+
+.leyu_nav .navbar-brand:hover,
+.leyu_nav .navbar-brand:focus {
+	color: #5e5e5e;
+	background-color: transparent;
+}
+
+.leyu_nav .navbar-text {
+	color: #777;
+}
+
+.leyu_nav .navbar-nav>li>a {
+	color: #777;
+}
+
+.leyu_nav .navbar-nav>li>a:hover,
+.leyu_nav .navbar-nav>li>a:focus {
+	color: #333;
+	background-color: transparent;
+}
+
+.leyu_nav .navbar-nav>.active>a,
+.leyu_nav .navbar-nav>.active>a:hover,
+.leyu_nav .navbar-nav>.active>a:focus {
+	color: #555;
+	background-color: #e7e7e7;
+}
+
+.leyu_nav .navbar-nav>.disabled>a,
+.leyu_nav .navbar-nav>.disabled>a:hover,
+.leyu_nav .navbar-nav>.disabled>a:focus {
+	color: #ccc;
+	background-color: transparent;
+}
+
+.leyu_nav .navbar-toggle {
+	border-color: #ddd;
+}
+
+.leyu_nav .navbar-toggle:hover,
+.leyu_nav .navbar-toggle:focus {
+	background-color: #ddd;
+}
+
+.leyu_nav .navbar-toggle .icon-bar {
+	background-color: #888;
+}
+
+.leyu_nav .navbar-collapse,
+.leyu_nav .navbar-form {
+	border-color: #e7e7e7;
+}
+
+.leyu_nav .navbar-nav>.open>a,
+.leyu_nav .navbar-nav>.open>a:hover,
+.leyu_nav .navbar-nav>.open>a:focus {
+	color: #555;
+	background-color: #e7e7e7;
+}
+
+@media (max-width: 676px) {
+	.leyu_nav .navbar-nav .open .dropdown-menu>li>a {
+		color: #777;
+	}
+	.leyu_nav .navbar-nav .open .dropdown-menu>li>a:hover,
+	.leyu_nav .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #333;
+		background-color: transparent;
+	}
+	.leyu_nav .navbar-nav .open .dropdown-menu>.active>a,
+	.leyu_nav .navbar-nav .open .dropdown-menu>.active>a:hover,
+	.leyu_nav .navbar-nav .open .dropdown-menu>.active>a:focus {
+		color: #555;
+		background-color: #e7e7e7;
+	}
+	.leyu_nav .navbar-nav .open .dropdown-menu>.disabled>a,
+	.leyu_nav .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+	.leyu_nav .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+		color: #ccc;
+		background-color: transparent;
+	}
+}
+
+.leyu_nav .navbar-link {
+	color: #777;
+}
+
+.leyu_nav .navbar-link:hover {
+	color: #333;
+}
+
+.leyu_nav .btn-link {
+	color: #777;
+}
+
+.leyu_nav .btn-link:hover,
+.leyu_nav .btn-link:focus {
+	color: #333;
+}
+
+.leyu_nav .btn-link[disabled]:hover,
+fieldset[disabled] .leyu_nav .btn-link:hover,
+.leyu_nav .btn-link[disabled]:focus,
+fieldset[disabled] .leyu_nav .btn-link:focus {
+	color: #ccc;
+}
+
+
+/*导航结束*/
+
+
+/*banner图开始*/
+
+.jumbotron {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #eee;
+	height: 300px;
+	width: 100%;
+	vertical-align: middle;
+	background: url(../images/index/banner.jpg) no-repeat;
+	background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		height: 520px;
+		color: inherit;
+	}
+	.row .sourehan {
+		margin-top: 100px;
+		color: rgba(252, 252, 252, 0.9);
+	}
+	h3 #video-start {
+		color: #c6cacc;
+	}
+	#video-start img {
+		position: static;
+		margin-right: 20px;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.jumbotron {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		height: 300px;
+		color: inherit;
+	}
+	.row .sourehan {
+		color: rgba(252, 252, 252, 0.9);
+	}
+	h3 #video-start {
+		color: #c6cacc;
+	}
+	#video-start img {
+		position: static;
+		margin-right: 20px;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+
+/*banner图结束*/
+
+
+/*人才来源开始*/
+
+.section_block {
+	position: relative;
+	overflow: hidden;
+	padding: 6rem 15px;
+	background-color: #fff;
+	color: #434a54;
+	text-align: center;
+}
+
+.text_muted {
+	color: #aab2bd;
+}
+
+.decorate_line {
+	margin: 40px auto;
+	width: 80px;
+	height: 5px;
+	background-color: #aab2bd;
+}
+
+.partner {
+	margin: 4rem 0;
+}
+
+.partner [class*=col] {
+	margin-bottom: 30px;
+	height: 36px;
+	vertical-align: bottom;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+
+/*人才来源结束*/
+
+
+/*快速开班开始*/
+
+.grid_intro .grid_icon {
+	position: relative;
+	display: flex;
+	width: 120px;
+	height: 120px;
+	background-color: rgb(223, 236, 240);
+	box-shadow: rgba(223, 236, 240, 0.5) 0px 0px 0px 10px;
+	color: rgb(255, 255, 255);
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	margin: 20px auto 60px;
+	border-radius: 100%;
+	animation: radiate 1s linear 0s infinite alternate-reverse none running;
+}
+
+.grid_intro {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.icon_svg_std {
+	width: 78px;
+	height: 78px;
+	background: url(http://www.leyu.net/file/yi/images/tech-03.svg);
+}
+
+.icon_svg_manage {
+	width: 78px;
+	height: 78px;
+	background: url(http://www.leyu.net/file/yi/images/tech-01.svg);
+}
+
+
+/*快速开班结束*/
+
+
+/*担保交易开始*/
+
+.grid .fwb_pay_step {
+	margin-top: 70px;
+}
+
+.feb_pay_step .step_text {
+	clear: both;
+	padding-bottom: 52px;
+	position: relative;
+	top: -5px;
+	overflow: hidden;
+}
+
+.step_txt dl {
+	margin-top: 0;
+	margin-bottom: 20px;
+	float: left;
+	width: 135px;
+	margin-left: 102px;
+	margin-top: 0px;
+}
+
+.step_txt dl.first {
+	margin-left: 230px;
+}
+
+.step_txt dl.fourth {
+	margin-left: 110px;
+}
+
+@media screen and (max-width: 989px) {
+	.step_txt dl {
+		margin-top: 0;
+		margin-bottom: 20px;
+		float: left;
+		width: 135px;
+		margin-left: 50px;
+		margin-top: 0px;
+	}
+	.step_txt dl.first {
+		margin-left: 130px;
+	}
+	.step_txt dl.fourth {
+		margin-left: 70px;
+	}
+}
+
+
+/*担保交易结束*/
+
+
+/*兼职保障开始*/
+
+.banner_bottom_grids {
+	margin-bottom: 20px;
+}
+
+.banner_bottom_grids .text_muted {
+	text-align: center;
+	padding: 20px 0px;
+}
+
+
+/*兼职保障结束*/
+
+
+/*雇主保障开始*/
+
+.customer_step dl {
+	display: inline-block;
+	width: 324px;
+}
+
+.customer_step dt em i {
+	position: absolute;
+	left: -16px;
+	top: -19px;
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-width: 16px;
+	border-color: rgb(255, 255, 255) transparent transparent;
+	border-style: solid;
+}
+
+.customer_step .yi dd .bold strong {
+	color: rgb(80, 193, 233);
+}
+
+.customer_step .wan dd .bold strong {
+	color: rgb(255, 117, 52);
+}
+
+.customer_step .yuan dd .bold strong {
+	color: rgb(236, 135, 193);
+}
+
+.customer_step .wei dd .bold strong {
+	color: rgb(172, 146, 237);
+}
+
+.customer_step .ma dd .bold strong {
+	color: rgb(160, 212, 104);
+}
+
+.customer_step .xiao dd .bold strong {
+	color: rgb(237, 85, 100);
+}
+
+.customer_step .yi dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(80, 193, 233);
+}
+
+.customer_step .wan dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(255, 117, 52);
+}
+
+.customer_step .yuan dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(236, 135, 193);
+}
+
+.customer_step .wei dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(172, 146, 237);
+}
+
+.customer_step .ma dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(160, 212, 104);
+}
+
+.customer_step .xiao dt {
+	color: rgb(51, 51, 51);
+	border-color: rgb(237, 85, 100);
+}
+
+.customer_step .yi i {
+	background-position: 0px -1394px;
+}
+
+.customer_step .wan i {
+	background-position: 0px -938px;
+}
+
+.customer_step .yuan i {
+	background-position: 0px -1027px;
+}
+
+.customer_step .wei i {
+	background-position: 0px -1118px;
+}
+
+.customer_step .ma i {
+	background-position: 0px -1210px;
+}
+
+.customer_step .xiao i {
+	background-position: 0px -1302px;
+}
+
+.customer_step .yi dt em {
+	border-color: rgb(80, 193, 233) transparent transparent;
+}
+
+.customer_step .wan dt em {
+	border-color: rgb(255, 117, 52) transparent transparent;
+}
+
+.customer_step .yuan dt em {
+	border-color: rgb(236, 135, 193) transparent transparent;
+}
+
+.customer_step .wei dt em {
+	border-color: rgb(172, 146, 237) transparent transparent;
+}
+
+.customer_step .ma dt em {
+	border-color: rgb(160, 212, 104) transparent transparent;
+}
+
+.customer_step .xiao dt em {
+	border-color: rgb(237, 85, 100) transparent transparent;
+}
+
+.customer_step dt {
+	text-align: center;
+	font-size: 17px;
+	width: 215px;
+	color: rgb(13, 173, 81);
+	position: relative;
+	font-weight: normal;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(15, 174, 82);
+	border-image: initial;
+	padding: 10px 0px;
+	margin: 0px auto 27px;
+}
+
+.customer_step dt em {
+	position: absolute;
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	left: 92px;
+	top: 45px;
+	border-width: 12px;
+	border-color: rgb(15, 174, 82) transparent transparent;
+	border-style: solid;
+}
+
+.customer_step dd i {
+	display: inline-block;
+	width: 59px;
+	height: 61px;
+	clear: both;
+	background: url(../images/index/sprite.png) no-repeat;
+}
+
+.customer_step dl dd .bold {
+	margin-bottom: 5px;
+}
+
+.desc {
+	color: #aab2bsd;
+}
+
+/*雇主保障结束*/
+
+
+/*脚部开始*/
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background-color: #606873;
+}
+
+.footer h4 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #dedede;
+	margin-left: 2em;
+}
+
+.span12 {
+	width: 100%;
+	min-height: 30px;
+}
+
+.span6 {
+	width: 50%;
+	float: left;
+}
+
+.span6 a {
+	color: #fff;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.mr {
+	margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+	.mb {
+		margin-bottom: 40px;
+	}
+	.footer h4 {
+		text-align: center;
+		margin-left: -4px;
+	}
+	.span12 {
+		text-align: center;
+		display: block;
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	.span6 {
+		text-align: center;
+		display: block;
+		float: none;
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		margin-left: 0;
+	}
+}
+/*脚部结束*/
+/*友情链接开始*/
+.link_item {
+	padding-top: 15px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 1.4rem;
+	background-color: #ffffff;
+	color: #666;
+}
+.link_item li{
+	display: inline;
+  padding: 5px 10px;
+  line-height: 20px;
+}
+.link_item li a{
+	color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.lianjie,.lianjie a,.copy{
+	color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+}
+a:hover{
+	text-decoration: none;
+}
+/*友情链接结束*/
