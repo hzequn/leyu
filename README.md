@@ -8,7 +8,7 @@ leyu
 
 ###项目说明
 
-<p>该项目是一个招聘网站，用户可以登录注册并且查看需求简历。项目使用nodejs编写后台，MongoDB数据库支持数据的渲染。可实现页面数据即时更新，做到了前后端交互</p>
+<p>该项目是一个招聘网站，用户可以登录注册并且查看需求简历。项目使用nodejs编写后台，MongoDB数据库支持数据的渲染。可实现页面数据即时更新，做到了前后端交互.</p>
 
 项目演示
 ---
@@ -86,4 +86,24 @@ leyu
 			code: 1
 		})
 	})	
+	})
+
+添加需求
+
+![](https://github.com/hzequn/leyu/blob/master/pic/add.gif)
+
+<p>Tips:网站可实时添加需求，供用户进入网站查看最新的需求发布以及根据关键词查询需求简历。</p>
+
+根据关键字查询需求简历的代码如下：
+
+	//通过查询内容找到相对应的招聘需求
+	router.get('/Recruit',(req,res)=>{
+	recruit.find({type:{$regex:req.query.kw}},(err,data)=>{
+		if(err){
+			console.log(err);
+			res.json({code:0,msg:"查询失败"});
+			return;
+		}
+		res.json(data);
+	})
 	})
