@@ -92,9 +92,9 @@ leyu
 
 ![](https://github.com/hzequn/leyu/blob/master/pic/add.gif)
 
-<p>Tips:网站可实时添加需求，供用户进入网站查看最新的需求发布以及根据关键词查询需求简历。</p>
+<p>Tips:网站可实时添加需求，供用户进入网站查看最新的需求发布以及根据关键词查询招聘需求。</p>
 
-根据关键字查询需求简历的代码如下：
+根据关键字查询招聘需求的代码如下：
 
 	//通过查询内容找到相对应的招聘需求
 	router.get('/Recruit',(req,res)=>{
@@ -106,4 +106,41 @@ leyu
 		}
 		res.json(data);
 	})
+	})
+
+添加招聘需求代码如下：
+
+	//添加招聘需求
+	router.post('/demand',bodyParser(),(req,res)=>{
+	let {username,type,address,description,per_diem,working_hourse,startDate,product_intro,team_intro}=req.body;
+	if(username==""){
+		res.json({code:0,msg:"发布失败"});
+	}else{
+		recsecrole.find((err,data)=>{
+			let firid=data[0].firid;
+			let secid=data[0].secid;
+			let myDate = new Date();
+			recruit.create({
+				username:username,
+				type:type,
+				address:address,
+				description:description,
+				per_diem:per_diem,
+				working_hourse:working_hourse,
+				startDate:startDate,
+				product_intro:product_intro,
+				team_intro:team_intro,
+				firid:firid,
+				secid:secid,
+				time:(myDate.getMonth()+1).toString()+'月'+myDate.getDate().toString()+'日'+myDate.getHours().toString()+':'+myDate.getMinutes().toString()
+			},(err,data)=>{
+				if(err){
+					console.log(err);
+					res.json({code:0,msg:"发布失败"});
+					return;
+				}
+			});
+		})
+		res.json({code:1});
+	}
 	})
